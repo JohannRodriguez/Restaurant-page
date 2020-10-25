@@ -1,0 +1,24 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
+  margin: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  font-size: 40px;
+  font-family: 'Staatliches', cursive;
+  color: white;
+}
+
+nav li {
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+nav li:hover {
+  border-bottom: 3px solid red;
+}
