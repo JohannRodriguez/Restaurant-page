@@ -1,4 +1,4 @@
-import { appendElements, newElement } from "./manageElements";
+import { appendElements, newElement } from './manageElements';
 
 const homePage = (target) => {
   const div = newElement('div', null, 'homepage', 'rm');

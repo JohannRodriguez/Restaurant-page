@@ -2,7 +2,7 @@ import { newElement, appendElements } from './manageElements.js';
 
 const menu = (target) => {
 
-  const section = newElement('section');
+  const section = newElement('section', null, 'menu', 'rm');
 
   const sectionChilds = {
     title: newElement('h1', 'Menu'),

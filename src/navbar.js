@@ -1,4 +1,4 @@
-import { appendElements, newElement } from "./manageElements";
+import { appendElements, newElement } from './manageElements';
 
 const navBar = (target) => {
   const nav = newElement('nav');
