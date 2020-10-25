@@ -1,24 +1,66 @@
+body {
+  margin: 0;
+  font-family: 'Staatliches', cursive;
+}
+
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 700px;
-  margin: auto;
+  left: calc(50% - 350px);
+  top: 50px;
+  position: absolute;
+  z-index: 100;
 }
 
 nav ul {
   list-style-type: none;
   display: flex;
   font-size: 40px;
-  font-family: 'Staatliches', cursive;
   color: white;
 }
 
 nav li {
   margin-left: 25px;
   cursor: pointer;
+  border-bottom: 3px solid rgba(255, 255, 255, 0);
+  transition: 0.3s;
 }
 
 nav li:hover {
   border-bottom: 3px solid red;
+  transition: 0.3s;
+}
+
+.homepage {
+  position: relative;
+  height: 100vh;
+}
+
+.background {
+ width: 100%;
+ z-index: -10;
+ height: 99.7vh;
+ position: absolute;
+}
+
+.hp-h {
+  background-color: white;
+  font-size: 60px;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+  top: 300px;
+  padding: 10px 20px;
+}
+
+.hp-p {
+  width: fit-content;
+  margin: auto;
+  position: relative;
+  top: 350px;
+  background-color: white;
+  padding: 10px 20px;
+  font-size: 20px;
 }
