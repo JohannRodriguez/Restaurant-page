@@ -14,8 +14,11 @@ nav {
   z-index: 100;
 }
 
-nav ul {
+ul {
   list-style-type: none;
+}
+
+nav ul {
   display: flex;
   font-size: 40px;
   color: white;

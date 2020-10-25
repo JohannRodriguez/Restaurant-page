@@ -1,6 +1,7 @@
 const homePage = (target) => {
   const div = document.createElement('div');
   div.classList = 'homepage';
+  div.id = 'rm'
 
   const backGImage = document.createElement('img');
   backGImage.src = './resources/homebg.jpg';
