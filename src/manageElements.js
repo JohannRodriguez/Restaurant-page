@@ -1,4 +1,4 @@
-const newElement = (type, text, eClass, eId) => {
+const newElement = (type, text, eClass, eId, eSrc) => {
   const element = document.createElement(type);
   if(text) {
     element.textContent = text;
@@ -8,6 +8,9 @@ const newElement = (type, text, eClass, eId) => {
   }
   if(eClass) {
     element.classList = eClass;
+  }
+  if(eSrc) {
+    element.src = eSrc;
   }
   return element;
 };

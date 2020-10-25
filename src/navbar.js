@@ -1,27 +1,22 @@
+import { appendElements, newElement } from "./manageElements";
+
 const navBar = (target) => {
-  const nav = document.createElement('nav');
+  const nav = newElement('nav');
 
-  const img = document.createElement('img');
-  img.src = './resources/logo.png';
-  const navItems = document.createElement('ul');
-
-  const home = document.createElement('li');
-  home.textContent = 'Home';
-  home.id = 'home';
-  const menu = document.createElement('li');
-  menu.textContent = 'Menu';
-  menu.id = 'menu';
-  const contact = document.createElement('li');
-  contact.textContent = 'Contact';
-  contact.id = 'contact';
-
-  navItems.appendChild(home);
-  navItems.appendChild(menu);
-  navItems.appendChild(contact);
-  nav.appendChild(img);
-  nav.appendChild(navItems);
+  const navChilds = {
+    img: newElement('img', null, null, null, './resources/logo.png'),
+    navList: newElement('ul'),
+  };
   
-  target.appendChild(nav);
+  const navListChilds = {
+    home: newElement('li', 'Home', null, 'home'),
+    menu: newElement('li', 'Menu', null, 'menu'),
+    contact: newElement('li', 'Contact', null, 'contact'),
+  };
+
+  appendElements(navChilds.navList, navListChilds);
+  
+  target.appendChild(appendElements(nav, navChilds));
 };
 
 export default navBar;

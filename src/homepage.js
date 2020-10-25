@@ -1,24 +1,15 @@
+import { appendElements, newElement } from "./manageElements";
+
 const homePage = (target) => {
-  const div = document.createElement('div');
-  div.classList = 'homepage';
-  div.id = 'rm'
+  const div = newElement('div', null, 'homepage', 'rm');
 
-  const backGImage = document.createElement('img');
-  backGImage.src = './resources/homebg.jpg';
-  backGImage.classList = 'background';
+  const divChilds = {
+    backGImage: newElement('img', null, 'background', null, './resources/homebg.jpg'),
+    title: newElement('h1', 'Best desserts in town', 'hp-h'),
+    desc: newElement('p', 'We are a dedicated to make you feel sweeter', 'hp-p'),
+  };
 
-  const heading = document.createElement('h1');
-  heading.textContent = 'Best desserts in town';
-  heading.classList = 'hp-h';
-
-  const description = document.createElement('p');
-  description.textContent = 'We are a dedicated to make you feel sweeter';
-  description.classList = 'hp-p';
-
-  div.appendChild(backGImage);
-  div.appendChild(heading); 
-  div.appendChild(description);
-  target.appendChild(div);
+  target.appendChild(appendElements(div, divChilds));
 };
 
 export default homePage;
