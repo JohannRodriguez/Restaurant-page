@@ -31,6 +31,10 @@ nav li {
   transition: 0.3s;
 }
 
+.menu-choice li {
+  font-size: 20px;
+}
+
 nav li:hover {
   border-bottom: 3px solid red;
   transition: 0.3s;
@@ -43,11 +47,11 @@ nav li:hover {
 }
 
 .background {
- width: 100%;
- z-index: -10;
- height: 99.7vh;
- position: absolute;
- transition: 1s;
+  width: 100%;
+  z-index: -10;
+  height: 99.7vh;
+  position: absolute;
+  transition: 1s;
 }
 
 .hp-h {
@@ -99,16 +103,12 @@ nav li:hover {
   padding-left: 30px;
 }
 
-.menu-choice li {
-  font-size: 20px;
-}
-
 .bread {
   border: solid 3px rgb(216, 97, 76);
 }
 
 .bread h3 {
-  background-color:rgb(216, 97, 76);
+  background-color: rgb(216, 97, 76);
 }
 
 .coffee {
@@ -124,7 +124,7 @@ nav li:hover {
 }
 
 .dessert h3 {
-  background-color:rgb(221, 185, 117);
+  background-color: rgb(221, 185, 117);
 }
 
 .menu .background {
