@@ -130,3 +130,22 @@ nav li:hover {
 .menu .background {
   height: 130vh;
 }
+
+.contact h1 {
+  margin: 0;
+  font-size: 50px;
+}
+
+.contact p {
+  font-size: 30px;
+}
+
+.contact h1,
+.contact p {
+  width: 500px;
+  margin: auto;
+  position: relative;
+  top: 300px;
+  background-color: white;
+  padding: 5px 10px;
+}
