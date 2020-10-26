@@ -4,7 +4,7 @@ const navBar = (target) => {
   const nav = newElement('nav');
 
   const navChilds = {
-    img: newElement('img', null, null, null, './resources/logo.png'),
+    img: newElement('img', null, null, null, '/src/assets/images/logo.png'),
     navList: newElement('ul'),
   };
 

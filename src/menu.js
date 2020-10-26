@@ -4,7 +4,7 @@ const menu = (target) => {
   const section = newElement('section', null, 'menu', 'rm');
 
   const sectionChilds = {
-    backGImage: newElement('img', null, 'background', null, './resources/menubg.jpg'),
+    backGImage: newElement('img', null, 'background', null, '/src/assets/images/menubg.jpg'),
     title: newElement('h1', 'Our Menu'),
     bread: newElement('div', null, 'menu-choice bread'),
     coffee: newElement('div', null, 'menu-choice coffee'),
