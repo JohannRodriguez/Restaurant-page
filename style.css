@@ -39,6 +39,7 @@ nav li:hover {
 .homepage {
   position: relative;
   height: 100vh;
+  opacity: 1;
 }
 
 .background {
@@ -46,6 +47,7 @@ nav li:hover {
  z-index: -10;
  height: 99.7vh;
  position: absolute;
+ transition: 1s;
 }
 
 .hp-h {
@@ -66,4 +68,65 @@ nav li:hover {
   background-color: white;
   padding: 10px 20px;
   font-size: 20px;
+}
+
+.menu h1 {
+  margin: 0 auto;
+  width: fit-content;
+  position: relative;
+  top: 220px;
+  font-size: 50px;
+  color: white;
+}
+
+.menu-choice {
+  position: relative;
+  top: 230px;
+  width: 500px;
+  margin: auto;
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.menu-choice h3 {
+  margin: 0;
+  padding: 10px 15px;
+  font-size: 25px;
+}
+
+.menu-choice ul {
+  padding-left: 30px;
+}
+
+.menu-choice li {
+  font-size: 20px;
+}
+
+.bread {
+  border: solid 3px rgb(216, 97, 76);
+}
+
+.bread h3 {
+  background-color:rgb(216, 97, 76);
+}
+
+.coffee {
+  border: solid 3px rgb(206, 140, 102);
+}
+
+.coffee h3 {
+  background-color: rgb(206, 140, 102);
+}
+
+.dessert {
+  border: solid 3px rgb(221, 185, 117);
+}
+
+.dessert h3 {
+  background-color:rgb(221, 185, 117);
+}
+
+.menu .background {
+  height: 130vh;
 }
