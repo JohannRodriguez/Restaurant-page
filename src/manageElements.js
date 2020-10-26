@@ -16,9 +16,10 @@ const newElement = (type, text, eClass, eId, eSrc) => {
 };
 
 const appendElements = (parent, childs) => {
-  for (const [key, value] of Object.entries(childs)) {
-    parent.appendChild(value);
-  }
+  const array = Object.entries(childs);
+  array.forEach(element => {
+    parent.appendChild(element[1]);
+  });
   return parent;
 };
 

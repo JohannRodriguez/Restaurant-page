@@ -1,8 +1,8 @@
-import navBar from './navbar'
+import navBar from './navbar';
 import homePage from './homepage';
 import menu from './menu';
 import contact from './contact';
-import removeElement from './remove'
+import removeElement from './remove';
 
 const pageContent = document.getElementById('content');
 
