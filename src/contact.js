@@ -1,8 +1,8 @@
-import { appendElements, newElement } from './manageElements'
+import { appendElements, newElement } from './manageElements';
 
 const contact = (target) => {
   const section = newElement('section', null, 'contact', 'rm');
-  
+
   const sectionChilds = {
     backGImage: newElement('img', null, 'background', null, './resources/contactbg.jpg'),
     title: newElement('h1', 'Contact us'),
@@ -12,6 +12,6 @@ const contact = (target) => {
   };
 
   target.appendChild(appendElements(section, sectionChilds));
-}
+};
 
 export default contact;

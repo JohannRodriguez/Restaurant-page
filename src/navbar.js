@@ -7,7 +7,7 @@ const navBar = (target) => {
     img: newElement('img', null, null, null, './resources/logo.png'),
     navList: newElement('ul'),
   };
-  
+
   const navListChilds = {
     home: newElement('li', 'Home', null, 'home'),
     menu: newElement('li', 'Menu', null, 'menu'),
@@ -15,7 +15,7 @@ const navBar = (target) => {
   };
 
   appendElements(navChilds.navList, navListChilds);
-  
+
   target.appendChild(appendElements(nav, navChilds));
 };
 

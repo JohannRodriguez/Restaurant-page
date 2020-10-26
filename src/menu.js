@@ -1,7 +1,6 @@
-import { newElement, appendElements } from './manageElements.js';
+import { newElement, appendElements } from './manageElements';
 
 const menu = (target) => {
-
   const section = newElement('section', null, 'menu', 'rm');
 
   const sectionChilds = {
@@ -23,7 +22,7 @@ const menu = (target) => {
   const dessertChilds = {
     title: newElement('h3', 'DESSERT'),
     dessertList: newElement('ul'),
-  }
+  };
 
   const breadListChilds = {
     pumpernickel: newElement('li', 'Pumpernickel....................$5.95'),
@@ -40,7 +39,7 @@ const menu = (target) => {
     miel: newElement('li', 'Coffee Miel........................$4.50'),
     cappuccino: newElement('li', 'Cappuccino........................$4.00'),
     cocoa: newElement('li', 'Cocoa..................................$3.50'),
-  }
+  };
   const dessertListChilds = {
     croissant: newElement('li', 'Croissant............................$9.55'),
     milleF: newElement('li', 'Mille-Feville......................$12.50'),
@@ -48,7 +47,7 @@ const menu = (target) => {
     cremeB: newElement('li', 'Creme Brulée.....................$10.50'),
     appleC: newElement('li', 'Apple Cupcake....................$9.75'),
     cheesecake: newElement('li', 'Cheesecake.........................$11.50'),
-  }
+  };
 
   appendElements(breadChilds.breadList, breadListChilds);
   appendElements(coffeeChilds.coffeeList, coffeeListChilds);

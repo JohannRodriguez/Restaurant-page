@@ -1,7 +1,8 @@
-import navBar from './navbar.js'
-import homePage from './homepage.js';
-import menu from './menu.js';
-import contact from './contact.js';
+import navBar from './navbar'
+import homePage from './homepage';
+import menu from './menu';
+import contact from './contact';
+import removeElement from './remove'
 
 const pageContent = document.getElementById('content');
 
@@ -11,20 +12,20 @@ homePage(pageContent);
 const homeBtn = document.getElementById('home');
 homeBtn.addEventListener('click', () => {
   const hp = document.getElementById('rm');
-  hp.remove();
+  removeElement(hp);
   homePage(pageContent);
 });
 
 const menuBtn = document.getElementById('menu');
 menuBtn.addEventListener('click', () => {
-  const hp = document.getElementById('rm');
-  hp.remove();
+  const m = document.getElementById('rm');
+  removeElement(m);
   menu(pageContent);
 });
 
 const contactBtn = document.getElementById('contact');
 contactBtn.addEventListener('click', () => {
-  const hp = document.getElementById('rm');
-  hp.remove();
+  const c = document.getElementById('rm');
+  removeElement(c);
   contact(pageContent);
 });
