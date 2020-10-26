@@ -4,7 +4,7 @@
 
 > This is a project created for Microverse
 
-![screenshot](./app_screenshot.png)
+![screenshot](./screenshot.png)
 
 This is a restaurant page, the content of the page is purely embed with javascript.
 
