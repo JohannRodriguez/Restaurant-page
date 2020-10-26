@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: 'Staatliches', cursive;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
+  left: calc(50% - 350px);
+  top: 50px;
+  position: absolute;
+  z-index: 100;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav ul {
+  display: flex;
+  font-size: 40px;
+  color: white;
+}
+
+nav li {
+  margin-left: 25px;
+  cursor: pointer;
+  border-bottom: 3px solid rgba(255, 255, 255, 0);
+  transition: 0.3s;
+}
+
+.menu-choice li {
+  font-size: 20px;
+}
+
+nav li:hover {
+  border-bottom: 3px solid red;
+  transition: 0.3s;
+}
+
+.homepage {
+  position: relative;
+  height: 100vh;
+  opacity: 1;
+}
+
+.background {
+  width: 100%;
+  z-index: -10;
+  height: 99.7vh;
+  position: absolute;
+  transition: 1s;
+}
+
+.hp-h {
+  background-color: white;
+  font-size: 60px;
+  width: fit-content;
+  margin: auto;
+  position: relative;
+  top: 300px;
+  padding: 10px 20px;
+}
+
+.hp-p {
+  width: fit-content;
+  margin: auto;
+  position: relative;
+  top: 350px;
+  background-color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+
+.menu h1 {
+  margin: 0 auto;
+  width: fit-content;
+  position: relative;
+  top: 220px;
+  font-size: 50px;
+  color: white;
+}
+
+.menu-choice {
+  position: relative;
+  top: 230px;
+  width: 500px;
+  margin: auto;
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.menu-choice h3 {
+  margin: 0;
+  padding: 10px 15px;
+  font-size: 25px;
+}
+
+.menu-choice ul {
+  padding-left: 30px;
+}
+
+.bread {
+  border: solid 3px rgb(216, 97, 76);
+}
+
+.bread h3 {
+  background-color: rgb(216, 97, 76);
+}
+
+.coffee {
+  border: solid 3px rgb(206, 140, 102);
+}
+
+.coffee h3 {
+  background-color: rgb(206, 140, 102);
+}
+
+.dessert {
+  border: solid 3px rgb(221, 185, 117);
+}
+
+.dessert h3 {
+  background-color: rgb(221, 185, 117);
+}
+
+.menu .background {
+  height: 130vh;
+}
+
+.contact h1 {
+  margin: 0;
+  font-size: 50px;
+}
+
+.contact p {
+  font-size: 30px;
+}
+
+.contact h1,
+.contact p {
+  width: 500px;
+  margin: auto;
+  position: relative;
+  top: 300px;
+  background-color: white;
+  padding: 5px 10px;
+}
